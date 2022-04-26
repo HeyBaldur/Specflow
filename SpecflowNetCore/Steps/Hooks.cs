@@ -9,7 +9,11 @@ namespace SpecflowNetCore.Steps
     [Binding]
     public sealed class Hooks
     {
-        // For additional details on SpecFlow hooks see http://go.specflow.org/doc-hooks
+        /*
+         * Hooks (event bindings) can be used to perform additional automation logic at 
+         * specific times, such as any setup required prior to executing a scenario. 
+         * In order to use hooks, you need to add the Binding attribute to your class.
+         */
 
         [BeforeScenario]
         public void BeforeScenario()

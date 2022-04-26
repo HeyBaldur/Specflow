@@ -14,6 +14,8 @@ Scenario: Perform login of EA application site
 	Then I should see Employee details link
 
 # Scenario Outline is like a loop
+#The Scenario Outline keyword can be used to run the same Scenario multiple times, with different combinations of values.
+#The keyword Scenario Template is a synonym of the keyword Scenario Outline.
 Scenario Outline: Run application in two urls
 	Given I launch the application with <url>
 	And I click login link
